@@ -25,6 +25,7 @@ function Footer() {
           <p>Contact Us</p>
         </div>
         <button className="service-btn">Service Code</button>
+        <p className="small">Netflix Clone by Tatpol Samakpong</p>
       </div>
     </footer>
   )
