@@ -1,4 +1,25 @@
 .movies-list {
   background-color: black;
   min-height: 100vh;
+  position: relative;
+}
+
+.movies-row {
+  transform: translateY(-50%);
+  margin-bottom: 3rem;
+  padding: 0 3.5rem;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.movie-card {
+  height: 120px;
+  margin: 0 5px;
+}
+
+.movie-card img {
+  border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
 }

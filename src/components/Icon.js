@@ -3,7 +3,7 @@ import React from 'react'
 function Icon({ iconClass }) {
   return (
     <div className="icon">
-      <i class={`${iconClass}`}></i>
+      <i className={`${iconClass}`}></i>
     </div>
   )
 }
