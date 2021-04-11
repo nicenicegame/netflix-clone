@@ -1,10 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Header.css'
 import Icon from './Icon'
 
 function Header() {
+  const [isHeaderFade, setIsHeaderFade] = useState(true)
+
+  useEffect(() => {
+    document.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        setIsHeaderFade(false)
+      } else {
+        setIsHeaderFade(true)
+      }
+    })
+  })
+
   return (
-    <header>
+    <header className={!isHeaderFade ? 'solid' : null}>
       <div className="navbar-left">
         <img
           src="https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg"

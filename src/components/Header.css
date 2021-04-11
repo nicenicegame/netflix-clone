@@ -9,6 +9,11 @@ header {
   padding: 0 3.5rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
   z-index: 10;
+  transition: background 0.4s ease-in-out;
+}
+
+header.solid {
+  background: black;
 }
 
 .navbar-left {
