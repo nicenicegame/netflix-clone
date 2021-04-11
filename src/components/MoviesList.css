@@ -24,6 +24,10 @@
   padding: 1rem 0;
 }
 
+.movies-slider::-webkit-scrollbar {
+  display: none;
+}
+
 .movie-card {
   margin: 0 3px;
   transition: transform 0.3s ease-in-out;
