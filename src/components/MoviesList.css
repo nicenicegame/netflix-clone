@@ -5,17 +5,34 @@
 }
 
 .movies-row {
-  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-60%);
+  padding-left: 3.5rem;
+}
+
+.movies-row h3 {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.movies-slider {
   margin-bottom: 3rem;
-  padding: 0 3.5rem;
   display: flex;
   overflow-y: hidden;
   overflow-x: auto;
+  padding: 1rem 0;
 }
 
 .movie-card {
   height: 120px;
-  margin: 0 5px;
+  margin: 0 3px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.movie-card:hover {
+  transform: scale(1.06);
 }
 
 .movie-card img {
