@@ -1,0 +1,43 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  padding: 0 3.5rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left img {
+  height: 25px;
+  object-fit: contain;
+  margin-right: 3rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.links p {
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right i {
+  margin-right: 2rem;
+}
