@@ -23,11 +23,17 @@ function Header() {
           alt="netflix logo"
         />
         <div className="links">
-          <p>Home</p>
-          <p>TV Shows</p>
-          <p>Movies</p>
-          <p>New & Popular</p>
-          <p>My List</p>
+          <p className="browse">
+            Browse
+            <Icon iconClass="fas fa-caret-down" />
+          </p>
+          <div className="nav-links">
+            <p>Home</p>
+            <p>TV Shows</p>
+            <p>Movies</p>
+            <p>New & Popular</p>
+            <p>My List</p>
+          </div>
         </div>
       </div>
       <div className="navbar-right">

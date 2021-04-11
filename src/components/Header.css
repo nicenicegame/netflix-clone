@@ -12,6 +12,15 @@ header {
   transition: background 0.4s ease-in-out;
 }
 
+.browse {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
 header.solid {
   background: black;
 }
@@ -39,11 +48,41 @@ header.solid {
   margin-right: 1.5rem;
 }
 
+.links p:hover {
+  color: rgb(221, 221, 221);
+}
+
 .navbar-right {
   display: flex;
   align-items: center;
 }
 
 .navbar-right i {
-  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0 1rem;
+  }
+
+  .navbar-left img {
+    margin-right: 1.5rem;
+  }
+
+  .browse {
+    display: flex;
+  }
+
+  .browse:hover {
+    text-decoration: underline;
+  }
+
+  .browse i {
+    margin-left: 5px;
+  }
+
+  .nav-links {
+    display: none;
+  }
 }

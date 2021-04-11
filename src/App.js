@@ -30,7 +30,6 @@ function App() {
     })
     getUpcomingMoviesData().then((moviesData) => {
       const latest = moviesData.results
-      console.log(latest)
       setLatestMovies(latest)
     })
   }, [])

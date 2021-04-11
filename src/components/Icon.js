@@ -1,11 +1,7 @@
 import React from 'react'
 
 function Icon({ iconClass }) {
-  return (
-    <div className="icon">
-      <i className={`${iconClass}`}></i>
-    </div>
-  )
+  return <i className={`${iconClass}`}></i>
 }
 
 export default Icon

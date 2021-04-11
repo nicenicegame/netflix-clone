@@ -40,3 +40,13 @@
   width: 210px;
   object-fit: cover;
 }
+
+@media screen and (max-width: 768px) {
+  .movies-row {
+    padding-left: 1rem;
+  }
+
+  .movie-card img {
+    width: 150px;
+  }
+}

@@ -1,5 +1,5 @@
 .hero {
-  height: 720px;
+  height: calc(10vw + 600px);
   margin-top: -4rem;
   position: relative;
   padding: 4rem 3.5rem;
@@ -18,16 +18,16 @@
 .hero-text {
   position: absolute;
   bottom: 12rem;
-  max-width: 500px;
+  max-width: calc(5vw + 400px);
 }
 
 .hero-title {
-  font-size: 2.5rem;
+  font-size: calc(1vw + 1.5rem);
 }
 
 .hero-overview {
-  font-size: 1.2rem;
-  padding: 0.75rem 0 2.5rem;
+  font-size: calc(0.5vw + 0.75rem);
+  padding: 0.75rem 0 calc(1vw + 1.5rem);
   font-weight: 300;
 }
 
@@ -37,18 +37,18 @@
 }
 
 .hero-btn i {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .play-btn,
 .info-btn {
   display: flex;
   align-items: center;
-  padding: 0.75rem 1.75rem;
+  padding: calc(1vw + 1px) calc(2vw + 5px);
   border: none;
   outline: none;
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: calc(1vw + 0.25rem);
   font-weight: 700;
   cursor: pointer;
   margin-right: 10px;
@@ -71,4 +71,10 @@
   bottom: 0;
   left: 0;
   background: linear-gradient(to top, #141414, transparent);
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 4rem 1rem;
+  }
 }
