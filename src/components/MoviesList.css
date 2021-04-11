@@ -1,5 +1,5 @@
 .movies-list {
-  background-color: black;
+  background-color: #141414;
   min-height: 100vh;
   position: relative;
 }
@@ -7,8 +7,9 @@
 .movies-row {
   display: flex;
   flex-direction: column;
-  transform: translateY(-60%);
+  transform: translateY(-8rem);
   padding-left: 3.5rem;
+  margin-bottom: 2rem;
 }
 
 .movies-row h3 {
@@ -17,7 +18,6 @@
 }
 
 .movies-slider {
-  margin-bottom: 3rem;
   display: flex;
   overflow-y: hidden;
   overflow-x: auto;
@@ -25,7 +25,6 @@
 }
 
 .movie-card {
-  height: 120px;
   margin: 0 3px;
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
@@ -38,5 +37,6 @@
 .movie-card img {
   border-radius: 5px;
   height: 100%;
+  width: 210px;
   object-fit: cover;
 }
