@@ -77,4 +77,10 @@
   .hero {
     padding: 4rem 1rem;
   }
+
+  .hero-text {
+    position: absolute;
+    bottom: 12rem;
+    max-width: calc(3vw + 300px);
+  }
 }

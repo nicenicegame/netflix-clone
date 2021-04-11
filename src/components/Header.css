@@ -58,7 +58,7 @@ header.solid {
 }
 
 .navbar-right i {
-  margin-left: 2rem;
+  margin-left: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -72,6 +72,7 @@ header.solid {
 
   .browse {
     display: flex;
+    align-items: center;
   }
 
   .browse:hover {
@@ -84,5 +85,9 @@ header.solid {
 
   .nav-links {
     display: none;
+  }
+
+  .navbar-right i {
+    margin-left: 0.75rem;
   }
 }
